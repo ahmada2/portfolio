@@ -1,0 +1,285 @@
+<style>
+header{
+    background:#0d1b2a;
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-container{
+    position:relative;
+}
+
+.hamburger{
+    font-size:28px;
+    cursor:pointer;
+}
+
+.menu{
+    display:none;
+    position:absolute;
+    right:0;
+    top:40px;
+    width:220px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+.menu a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:#0d1b2a;
+}
+
+.menu a:hover{
+    background:#f5f5f5;
+}
+
+.dropdown-content{
+    display:none;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropdown-content a{
+    padding-left:25px;
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f7fa;
+}
+
+.education-section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    color:#0d1b2a;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#6c757d;
+    margin-bottom:60px;
+}
+
+.education-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.education-card{
+    background:white;
+    border-left:6px solid #0d1b2a;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.education-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+.education-year{
+    display:inline-block;
+    background:#0d1b2a;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:0.9rem;
+    margin-bottom:15px;
+}
+
+.education-card h3{
+    color:#0d1b2a;
+    margin-bottom:10px;
+}
+
+.education-card h4{
+    color:#4cc9f0;
+    margin-bottom:15px;
+}
+
+.education-card p{
+    color:#555;
+    line-height:1.7;
+}
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.social-icons a{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    transform:scale(1.1);
+    background:#4cc9f0;
+}
+
+.social-icons img{
+    width:30px;
+    height:30px;
+}
+footer{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+<header>
+
+    <h2>Ahmad Sadeeq</h2>
+
+    <div class="menu-container">
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <div id="menu" class="menu">
+
+            <a href="index.html">About Me</a>
+
+            <div class="dropdown">
+
+                <a href="#">CV ▾</a>
+
+                <div class="dropdown-content">
+
+                    <a href="education.html">Education</a>
+
+                    <a href="project.html">Projects</a>
+
+                </div>
+
+            </div>
+
+            <a href="contact.html">Contact Me</a>
+
+        </div>
+
+    </div>
+
+</header>
+<section class="education-section">
+
+    <h2 class="section-title">Education</h2>
+
+    <p class="section-subtitle">
+        My academic journey and professional foundation.
+    </p>
+
+    <div class="education-container">
+
+        <div class="education-card">
+
+            <span class="education-year">
+                2018 – 2022
+            </span>
+
+            <h3>Bachelor of Science (BSc)</h3>
+
+            <h4>Cyprus International University</h4>
+
+            <p>
+                Studied Computer Engineering with a focus on
+                software development, programming, database systems,
+                networking, and problem-solving through technology.
+            </p>
+
+        </div>
+
+        <div class="education-card">
+
+            <span class="education-year">
+                2022 – 2024
+            </span>
+
+            <h3>Master of Science (MSc)</h3>
+
+            <h4>Cyprus International University</h4>
+
+            <p>
+                Studied Management Information Systems, combining
+                technology and business strategies to improve
+                organizational performance, decision-making,
+                and digital transformation.
+            </p>
+
+        </div>
+<a href="index.html" class="back">← Back to Portfolio</a>
+    </div>
+ <section id="contact">
+    <h2 class="section-title">Connect With Me</h2>
+
+    <div class="contact">
+
+        <p style="text-align:center; margin-bottom:20px;">
+            Click an icon below to visit my profiles
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://linkedin.com/in/ahmad-sadeeq-084110219" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+            </a>
+
+            <a href="https://instagram.com/ahmaadsadyq" target="_blank">
+    <img src="https://cdn.simpleicons.org/instagram/E4405F" />
+</a>
+
+            <a href="https://github.com/ahmada2" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </a>
+
+            <a href="https://x.com/yourprofile" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" />
+            </a>
+
+            <a href="https://facebook.com/17thmwqcqf/?mibextid=wwXlfr" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
+            </a>
+</section>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+
+    if(menu.style.display === "block"){
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+<footer>
+    <p>© 2026 Ahmad Sadeeq. All Rights Reserved.</p>
+</footer>

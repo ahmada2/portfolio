@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmad Sadeeq | Portfolio</title>
+
+<style>
+    .menu-container{
+    position:relative;
+}
+
+.hamburger{
+    font-size:28px;
+    cursor:pointer;
+    color:white;
+}
+
+.menu{
+    display:none;
+    position:absolute;
+    right:0;
+    top:40px;
+    background:white;
+    width:200px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
+
+.menu a{
+    display:block;
+    padding:12px;
+    text-decoration:none;
+    color:#0d1b2a;
+    border-bottom:1px solid #eee;
+}
+
+.menu a:hover{
+    background:#f1f1f1;
+}
+
+.dropdown{
+    position:relative;
+}
+
+.dropdown-content{
+    display:none;
+    background:#f9f9f9;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropdown-content a{
+    padding-left:25px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0d1b2a;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#4cc9f0;
+}
+
+.hero{
+    background:linear-gradient(rgba(13,27,42,0.8), rgba(13,27,42,0.8)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+}
+.hero h2{
+    margin:20px 0;
+    font-size:2rem;
+    color:#4cc9f0;
+    min-height:50px;
+}
+
+#changing-text{
+    border-right:3px solid #4cc9f0;
+    padding-right:5px;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#4cc9f0;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0d1b2a;
+}
+
+.about,
+.education,
+.contact{
+    background:white;
+    border-radius:10px;
+    padding:30px;
+}
+
+.back{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    border:2px solid white;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.back:hover{
+    background:white;
+    color:#0d1b2a;
+    transform:translateY(-2px);
+}
+
+footer{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.social-icons a{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    transform:scale(1.1);
+    background:#4cc9f0;
+}
+
+.social-icons img{
+    width:30px;
+    height:30px;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <h2>Ahmad Sadeeq</h2>
+
+    <div class="menu-container">
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <div id="menu" class="menu">
+            <a href="#about">About Me</a>
+
+            <div class="dropdown">
+                <a href="#cv">CV ▾</a>
+
+                <div class="dropdown-content">
+                    <a href="education.html">Education</a>
+                   <a href="project.html">Project</a>
+                </div>
+            </div>
+
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</header>
+<section class="hero" id="home">
+
+    <h1>Hi, I'm Ahmad Sadiq</h1>
+
+    <h2>
+        <span id="changing-text"></span>
+    </h2>
+
+    <p>
+        I have a strong interest in technology and business.
+        My goal is to build innovative solutions that solve
+        real-world problems using technology.
+    </p>
+<a href="contact.html" class="back">
+    Contact Me
+</a>
+</section>
+
+
+
+
+
+
+
+        <section id="contact">
+    <h2 class="section-title">Connect With Me</h2>
+
+    <div class="contact">
+
+        <p style="text-align:center; margin-bottom:20px;">
+            Click an icon below to visit my profiles
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://linkedin.com/in/ahmad-sadeeq-084110219" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+            </a>
+
+            <a href="https://instagram.com/ahmaadsadyq" target="_blank">
+    <img src="https://cdn.simpleicons.org/instagram/E4405F" />
+</a>
+
+            <a href="https://github.com/ahmada2" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </a>
+
+            <a href="https://x.com/yourprofile" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" />
+            </a>
+
+            <a href="https://facebook.com/17thmwqcqf/?mibextid=wwXlfr" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" />
+            </a>
+
+        </div>
+    </div>
+</section>
+
+    </div>
+</section>
+<script>
+function toggleMenu(){
+    var menu = document.getElementById("menu");
+    if(menu.style.display === "block"){
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+
+
+</script><script>
+const texts = [
+    "Web Developer",
+    "Project Manager",
+    "Business Planner",
+    "Market Researcher"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+
+    if(count === texts.length){
+        count = 0;
+    }
+
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.getElementById("changing-text").textContent = letter;
+
+    if(letter.length === currentText.length){
+
+        setTimeout(() => {
+
+            let erase = setInterval(() => {
+
+                letter = letter.slice(0, -1);
+                document.getElementById("changing-text").textContent = letter;
+
+                if(letter.length === 0){
+                    clearInterval(erase);
+                    count++;
+                    index = 0;
+                    setTimeout(type, 300);
+                }
+
+            }, 50);
+
+        }, 1500);
+
+        return;
+    }
+
+    setTimeout(type, 100);
+})();
+</script>
+
+<footer>
+    <p>© 2026 Ahmad Sadeeq. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
